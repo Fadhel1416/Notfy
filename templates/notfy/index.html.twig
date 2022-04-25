@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NotfyController!{% endblock %}
+
+{% block body %}
+ <nav>
+  <ul>
+    <li><strong>Notfy me  🚀</strong></li>
+  </ul>
+  <ul>
+    <li><a href="{{path('app_notfy',{'notfy':'success'})}}"   role="button">Success</a></li>
+    <li><a href="{{path('app_notfy',{'notfy':'error'})}}"   role="button" role="button">Error</a></li>
+    <li><a href="{{path('app_notfy',{'notfy':'info'})}}"   role="button">Info</a></li>
+    <li><a href="{{path('app_notfy',{'notfy':'warning'})}}"  role="button">Warning</a></li>
+  </ul>
+</nav>
+
+<article>
+<h1>{{notfy}}</h1>
+</article>
+
+{% endblock %}
