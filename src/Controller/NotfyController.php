@@ -15,7 +15,7 @@ class NotfyController extends AbstractController
     {
 
          if($notfy != null){
-            $this>$this->addFlash(
+            $this->addFlash(
                 $notfy,
                 $notfy
              );
